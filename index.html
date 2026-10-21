@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Hosting</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; line-height: 1.6; background: #fff; }
+    header { background: #174a7e; color: white; padding: 22px 8%; }
+    header h1 { margin: 0; font-size: 28px; }
+    nav { background: #12385e; padding: 10px 8%; }
+    nav a { color: white; text-decoration: none; margin-right: 22px; font-size: 14px; }
+    .hero { min-height: 270px; padding: 55px 8%; color: white; background: linear-gradient(90deg, rgba(0,0,0,.68), rgba(0,0,0,.18)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80') center/cover; }
+    .hero h2 { font-size: 34px; margin: 0 0 10px; }
+    .hero p { max-width: 600px; margin: 0; }
+    main { max-width: 1050px; margin: auto; padding: 25px 22px 45px; }
+    section { margin: 28px 0; }
+    h2 { color: #174a7e; }
+    .intro { display: flex; gap: 25px; align-items: center; }
+    .intro p { flex: 1; }
+    .intro img { width: 42%; max-height: 230px; object-fit: cover; border-radius: 6px; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { border: 1px solid #ddd; border-radius: 6px; padding: 17px; background: #f8fafc; }
+    .card h3 { margin-top: 0; color: #174a7e; }
+    .platforms { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .platforms img { width: 100%; height: 115px; object-fit: cover; border-radius: 4px; }
+    footer { text-align: center; padding: 17px; color: white; background: #12385e; font-size: 14px; }
+    @media (max-width: 700px) { .intro { display: block; } .intro img { width: 100%; margin-top: 10px; } .steps, .platforms { grid-template-columns: 1fr; } nav a { display: inline-block; margin: 3px 12px 3px 0; } .hero h2 { font-size: 28px; } }
+  </style>
+</head>
+<body>
+  <header><h1>Website Hosting</h1></header>
+  <nav>
+    <a href="#about">Introduction</a><a href="#working">How It Works</a><a href="#types">Types</a><a href="#platforms">Platforms</a>
+  </nav>
+  <div class="hero">
+    <h2>Hosting a Website</h2>
+    <p>Learn how websites are stored on servers and made available to people around the world.</p>
+  </div>
+  <main>
+    <section id="about" class="intro">
+      <div>
+        <h2>What is Website Hosting?</h2>
+        <p>Website hosting is a service that stores a website's files on a server and makes them accessible through the internet. When someone enters a website address in a browser, the server sends the required files so the page can be displayed.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Laptop displaying code on a desk">
+    </section>
+    <section id="working">
+      <h2>How Does Website Hosting Work?</h2>
+      <p>The process usually follows these simple steps:</p>
+      <div class="steps">
+        <div class="card"><h3>1. Create</h3><p>A developer creates the website using HTML, CSS, JavaScript, or other tools.</p></div>
+        <div class="card"><h3>2. Upload</h3><p>The website files are uploaded to a web hosting server.</p></div>
+        <div class="card"><h3>3. Access</h3><p>Visitors enter the website address, and the server delivers the page to their browser.</p></div>
+      </div>
+    </section>
+    <section id="types">
+      <h2>Types of Web Hosting</h2>
+      <div class="steps">
+        <div class="card"><h3>Shared Hosting</h3><p>Several websites share the same server. It is affordable and suitable for small websites.</p></div>
+        <div class="card"><h3>VPS Hosting</h3><p>A server is divided into virtual sections, giving each website more control and resources.</p></div>
+        <div class="card"><h3>Cloud Hosting</h3><p>A website uses resources from connected servers, helping it handle changing traffic.</p></div>
+      </div>
+    </section>
+    <section id="platforms">
+      <h2>Popular Hosting Platforms</h2>
+      <div class="platforms">
+        <div class="card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80" alt="Computer hardware"><h3>GitHub Pages</h3><p>Useful for hosting simple static websites directly from a GitHub repository.</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=700&q=80" alt="Digital network globe"><h3>Netlify</h3><p>Offers a simple way to deploy websites and connect projects to a custom domain.</p></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80" alt="People working with computers"><h3>Vercel</h3><p>A popular platform for deploying modern websites and web applications.</p></div>
+      </div>
+    </section>
+    <section><h2>Conclusion</h2><p>Website hosting makes it possible for people to access websites online at any time. Choosing the right hosting service depends on a website's size, budget, traffic, and technical needs.</p></section>
+  </main>
+  <footer>Website Hosting — Academic Assignment</footer>
+</body>
+</html>
